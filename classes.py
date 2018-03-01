@@ -5,7 +5,8 @@ class Loc:
         self.y = y
 
     def __str__(self):
-        str = "Location x: " + str(self.getX()) + ", Location Y: " + str(self.getY())
+        stri = "Location x: " + str(self.getX()) + ", Location Y: " + str(self.getY())
+        return stri
 
     def getX(self):
         return self.x
@@ -29,7 +30,8 @@ class Car:
         self.loc = loc
 
     def __str__(self):
-        str = "Car Location x: " + str(self.getX()) + ", Car Location Y: " + str(self.getY())
+        stri = "Car Location x: " + str(self.getX()) + ", Car Location Y: " + str(self.getY())
+        return stri
 
     def get_loc(self):
         return self.loc
@@ -74,10 +76,10 @@ class Ride:
         self.is_done = False
 
     def __str__(self):
-        str = "start_XY: " + str(self.get_start_loc().getX()) + " , " + str(self.get_start_loc().getY())
-        str = str + " end_XY: " + str(self.get_end_loc().getX()) + " , " + str(self.get_end_loc().getY())
-        str = str + "start_t: " + str(self.get_start_time()) + ", end_t: " + str(self.get_end_time()) + ", is_done: " + str(self.is_done())
-        return str
+        stri = "start_XY: " + str(self.get_start_loc().getX()) + " , " + str(self.get_start_loc().getY())
+        stri = str + " end_XY: " + str(self.get_end_loc().getX()) + " , " + str(self.get_end_loc().getY())
+        stri = str + "start_t: " + str(self.get_start_time()) + ", end_t: " + str(self.get_end_time()) + ", is_done: " + str(self.is_done())
+        return stri
 
 
     def get_start_loc(self):
@@ -99,3 +101,7 @@ class Ride:
         self.is_done = True
 
 
+
+loc1 = Loc()
+
+ride = Ride()
