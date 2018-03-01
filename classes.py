@@ -77,8 +77,8 @@ class Ride:
 
     def __str__(self):
         stri = "start_XY: " + str(self.get_start_loc().getX()) + " , " + str(self.get_start_loc().getY())
-        stri = str + " end_XY: " + str(self.get_end_loc().getX()) + " , " + str(self.get_end_loc().getY())
-        stri = str + "start_t: " + str(self.get_start_time()) + ", end_t: " + str(self.get_end_time()) + ", is_done: " + str(self.is_done())
+        stri = stri + " end_XY: " + str(self.get_end_loc().getX()) + " , " + str(self.get_end_loc().getY())
+        stri = stri + "start_t: " + str(self.get_start_time()) + ", end_t: " + str(self.get_end_time()) + ", is_done: " + self.is_done()
         return stri
 
 
