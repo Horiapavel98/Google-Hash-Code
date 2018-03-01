@@ -8,7 +8,7 @@ import classes as c
 class Parser_info:
 
     def __init__(self):
-        self.f = open("b_should_be_easy.in", "r")
+        self.f = open("c_no_hurry.in", "r")
         self.firstLine = self.f.readline().split()
         self.R = int(self.firstLine[0])
         self.C = int(self.firstLine[1])
@@ -39,7 +39,7 @@ class Parser_info:
 
     def get_cars(self):
         cars = []
-        for x in range(F):
+        for x in range(self.F):
             cars.append(c.Car(c.Loc(0,0)))
         return cars
 

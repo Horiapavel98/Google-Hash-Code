@@ -32,10 +32,10 @@ class Car:
         self.rides_made = 0
 
     def increment_rides(self):
-        rides_made = rides_made + 1
+        self.rides_made = self.rides_made + 1
 
     def add_ride(self,ride):
-        rides.append(ride)
+        self.rides.append(ride)
 
     def __str__(self):
         stri = "Car Location x: " + str(self.getX()) + ", Car Location Y: " + str(self.getY())
